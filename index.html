@@ -198,7 +198,7 @@ body::before {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .section-number {
@@ -218,6 +218,13 @@ body::before {
   text-transform: uppercase;
   color: var(--ink-3);
   white-space: nowrap;
+}
+
+.section-subtitle {
+  margin: 0 0 18px 36px;
+  font-size: 13px;
+  color: var(--ink-3);
+  line-height: 1.7;
 }
 
 .grid {
@@ -291,6 +298,9 @@ body::before {
   margin-top: 16px;
   padding-top: 11px;
   border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
 }
 
 .card-link {
@@ -405,7 +415,7 @@ body::before {
 
   <div class="ticker-wrap" aria-label="今日焦点">
     <div class="ticker-inner">
-      <span class="ticker-item"><span class="ticker-tag">AI 模型与实验室动态</span>OpenAI 抛出「Instruction Hierarchy」挑战</span>
+      <span class="ticker-item"><span class="ticker-tag">AI 模型</span>OpenAI 抛出「Instruction Hierarchy」挑战</span>
       <span class="ticker-item"><span class="ticker-tag">AI 产品</span>ChatGPT 新增数学与科学交互式可视化</span>
       <span class="ticker-item"><span class="ticker-tag">AI 产品</span>Gemini 继续深入 Google Workspace，Sheets 成为重点突破口</span>
       <span class="ticker-item"><span class="ticker-tag">Agent</span>Claude Code 走向多代理协作审查</span>
@@ -420,7 +430,7 @@ body::before {
       <span class="ticker-item"><span class="ticker-tag">商业</span>AI 应用留存问题开始暴露</span>
       <span class="ticker-item"><span class="ticker-tag">科研</span>Pokémon Go 的空间感知能力被拿来补机器人世界模型</span>
       <span class="ticker-item"><span class="ticker-tag">科研</span>Yann LeCun 方向获 10 亿美元支持，继续押注超越 LLM 的物理世界理解</span>
-      <span class="ticker-item"><span class="ticker-tag">AI 模型与实验室动态</span>OpenAI 抛出「Instruction Hierarchy」挑战</span>
+      <span class="ticker-item"><span class="ticker-tag">AI 模型</span>OpenAI 抛出「Instruction Hierarchy」挑战</span>
       <span class="ticker-item"><span class="ticker-tag">AI 产品</span>ChatGPT 新增数学与科学交互式可视化</span>
       <span class="ticker-item"><span class="ticker-tag">AI 产品</span>Gemini 继续深入 Google Workspace，Sheets 成为重点突破口</span>
       <span class="ticker-item"><span class="ticker-tag">Agent</span>Claude Code 走向多代理协作审查</span>
@@ -447,11 +457,11 @@ body::before {
     <div class="section-header">
       <span class="section-number">01</span>
       <div class="section-rule"></div>
-      <span class="section-title">今日精选</span>
+      <span class="section-title">AI 模型与实验室动态</span>
     </div>
-
+    <p class="section-subtitle">模型能力、实验室动向与可靠性边界。</p>
     <div class="grid">
-      <article class="card card--lead" data-cat="ai-model">
+      <article class="card" data-cat="ai-model">
         <div class="card-cat">AI 模型与实验室动态</div>
         <h3 class="card-title">OpenAI 抛出「Instruction Hierarchy」挑战</h3>
         <p class="card-reason">这不是普通研究更新，而是在正面解决 Agent 时代最关键的可靠性问题——系统、开发者与用户多层指令冲突时，模型如何稳定对齐。</p>
@@ -459,7 +469,17 @@ body::before {
           <a class="card-link" href="https://openai.com/index/instruction-hierarchy-challenge" target="_blank" rel="noopener">openai.com</a>
         </div>
       </article>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <div class="section-rule"></div>
+      <span class="section-title">AI 产品与平台</span>
+    </div>
+    <p class="section-subtitle">产品入口、平台整合与使用门槛变化。</p>
+    <div class="grid">
       <article class="card" data-cat="ai-product">
         <div class="card-cat">AI 产品与平台</div>
         <h3 class="card-title">ChatGPT 新增数学与科学交互式可视化</h3>
@@ -477,7 +497,17 @@ body::before {
           <a class="card-link" href="https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/" target="_blank" rel="noopener">blog.google</a>
         </div>
       </article>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <div class="section-rule"></div>
+      <span class="section-title">AI Agent 与工作流</span>
+    </div>
+    <p class="section-subtitle">多代理协作、AI coding 与工作流升级。</p>
+    <div class="grid">
       <article class="card" data-cat="agent">
         <div class="card-cat">AI Agent 与工作流</div>
         <h3 class="card-title">Claude Code 走向多代理协作审查</h3>
@@ -495,7 +525,17 @@ body::before {
           <a class="card-link" href="https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/" target="_blank" rel="noopener">techcrunch.com</a>
         </div>
       </article>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <div class="section-rule"></div>
+      <span class="section-title">开发者工具与开源</span>
+    </div>
+    <p class="section-subtitle">工程效率、开源生态与治理信号。</p>
+    <div class="grid">
       <article class="card" data-cat="devtools">
         <div class="card-cat">开发者工具与开源</div>
         <h3 class="card-title">Amazon 要求高级工程师为 AI 辅助改动签字</h3>
@@ -508,15 +548,25 @@ body::before {
       <article class="card" data-cat="devtools">
         <div class="card-cat">开发者工具与开源</div>
         <h3 class="card-title">GitHub 热度继续偏向 LLM 工程栈，而不是新模型仓库</h3>
-        <p class="card-reason">SGLang、TensorRT-LLM、SkyPilot、TensorZero 这类项目持续升温，说明真正被市场追逐的，是推理性能、可观测性、评测与算力编排这些生产层能力。  
-&lt;https://github.com/sgl-project/sglang&gt;  
-&lt;https://github.com/NVIDIA/TensorRT-LLM&gt;  
-&lt;https://github.com/skypilot-org/skypilot&gt;</p>
+        <p class="card-reason">SGLang、TensorRT-LLM、SkyPilot、TensorZero 这类项目持续升温，说明真正被市场追逐的，是推理性能、可观测性、评测与算力编排这些生产层能力。</p>
         <div class="card-footer">
+          <a class="card-link" href="https://github.com/sgl-project/sglang" target="_blank" rel="noopener">github.com</a>
+          <a class="card-link" href="https://github.com/NVIDIA/TensorRT-LLM" target="_blank" rel="noopener">github.com</a>
+          <a class="card-link" href="https://github.com/skypilot-org/skypilot" target="_blank" rel="noopener">github.com</a>
           <a class="card-link" href="https://github.com/tensorzero/tensorzero" target="_blank" rel="noopener">github.com</a>
         </div>
       </article>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <div class="section-rule"></div>
+      <span class="section-title">云、芯片与基础设施</span>
+    </div>
+    <p class="section-subtitle">算力、平台绑定与基础设施供给。</p>
+    <div class="grid">
       <article class="card" data-cat="infra">
         <div class="card-cat">云、芯片与基础设施</div>
         <h3 class="card-title">NVIDIA 与 Thinking Machines Lab 宣布长期吉瓦级合作</h3>
@@ -534,7 +584,17 @@ body::before {
           <a class="card-link" href="https://blogs.nvidia.com/blog/jetson-generative-ai-edge-oss/" target="_blank" rel="noopener">blogs.nvidia.com</a>
         </div>
       </article>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">06</span>
+      <div class="section-rule"></div>
+      <span class="section-title">安全、政策与治理</span>
+    </div>
+    <p class="section-subtitle">监管、法律、风控与产业边界摩擦。</p>
+    <div class="grid">
       <article class="card" data-cat="policy">
         <div class="card-cat">安全、政策与治理</div>
         <h3 class="card-title">Anthropic 起诉美国政府「供应链风险」认定</h3>
@@ -552,7 +612,17 @@ body::before {
           <a class="card-link" href="https://www.theverge.com/ai-artificial-intelligence/892401/amazon-perplexity-ai-shopping-agent-court-order" target="_blank" rel="noopener">www.theverge.com</a>
         </div>
       </article>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">07</span>
+      <div class="section-rule"></div>
+      <span class="section-title">商业、资本与行业格局</span>
+    </div>
+    <p class="section-subtitle">资本动作、留存、分发与竞争结构。</p>
+    <div class="grid">
       <article class="card" data-cat="biz">
         <div class="card-cat">商业、资本与行业格局</div>
         <h3 class="card-title">Mandiant 创始人再融 1.9 亿美元，做自主安全 Agent</h3>
@@ -570,7 +640,17 @@ body::before {
           <a class="card-link" href="https://techcrunch.com/2026/03/10/ai-powered-apps-struggle-with-long-term-retention-new-report-shows/" target="_blank" rel="noopener">techcrunch.com</a>
         </div>
       </article>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">08</span>
+      <div class="section-rule"></div>
+      <span class="section-title">前沿科研</span>
+    </div>
+    <p class="section-subtitle">具身智能、世界模型与下一代范式信号。</p>
+    <div class="grid">
       <article class="card" data-cat="research">
         <div class="card-cat">前沿科研</div>
         <h3 class="card-title">Pokémon Go 的空间感知能力被拿来补机器人世界模型</h3>

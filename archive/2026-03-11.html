@@ -222,7 +222,7 @@ body::before {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   background: transparent;
   border: none;
@@ -308,8 +308,9 @@ body::before {
 .card-link::before { content: '↗'; color: var(--accent); }
 .card-link:hover { color: var(--accent); }
 
-.card--lead { grid-column: span 2; }
-.card--lead .card-title { font-size: 20px; line-height: 1.4; }
+/* unified card sizing for stable daily reading rhythm */
+.card--lead { grid-column: span 1; }
+.card--lead .card-title { font-size: 15.5px; line-height: 1.5; }
 
 .verdict {
   margin: 40px 0 0;

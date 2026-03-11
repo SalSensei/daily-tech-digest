@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Tech Digest · 2026-03-11</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0d14;--bg2:#101522;--panel:#111827;--panel2:#171f2f;--ink:#ecf3ff;--muted:#9aa7bd;--line:#263247;--accent:#67e8f9;--maxw:980px;--r:18px;}
+*{--box-sizing:border-box;margin:0;padding:0} body{--font-family:'Inter',system-ui,sans-serif;background:radial-gradient(circle at top,#16233a 0,#0b1019 35%,#090c13 100%);color:var(--ink);line-height:1.7} a{--color:inherit} .page{--max-width:var(--maxw);margin:0 auto;padding:32px 18px 80px} .hero{--padding:36px 0 26px;border-bottom:1px solid rgba(255,255,255,.12)} .eyebrow{--font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#7dd3fc;margin-bottom:16px} .title{--font-size:clamp(38px,6vw,64px);line-height:1.02;font-weight:800;letter-spacing:-.04em} .title em{--font-style:normal;color:#a78bfa} .date{--margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--muted)}
+.overview{--margin-top:18px;background:linear-gradient(135deg,rgba(103,232,249,.14),rgba(167,139,250,.08));border:1px solid rgba(125,211,252,.18);border-radius:22px;padding:28px 28px 24px} .overview-label{--font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#7dd3fc;margin-bottom:12px} .overview-text{--font-size:16px;color:#dbe7fb}
+.top-picks{--margin-top:18px;background:rgba(17,24,39,.75);border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center} .top-picks-label{--font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)} .top-pick-item{--text-decoration:none;font-size:13px;color:#dbe7fb} .top-pick-item:hover{--color:#67e8f9}
+.section{--margin-top:34px} .section-head{--display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:18px} .section-title{--font-size:24px;font-weight:750;letter-spacing:-.02em} .section-sub{--font-size:13px;color:var(--muted)} .grid{--display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px} .card{--background:rgba(17,24,39,.84);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;position:relative;overflow:hidden} .card::before{--content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent)} .card-cat{--font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px} .card-title{--font-size:18px;line-height:1.35;font-weight:700;margin-bottom:10px} .card-reason{--font-size:14px;color:#d4dded;line-height:1.72} .card-footer{--margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08)} .card-link{--font-family:'IBM Plex Mono',monospace;font-size:11px;text-decoration:none;color:#7dd3fc} .card-link::before{--content:'↗ '}
+.judgment{--margin-top:34px;padding:22px 24px;background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.18);border-radius:20px} .judgment-label{--font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#c4b5fd;margin-bottom:10px} .judgment-text{--font-size:15px;color:#e5e7eb}
+.footer{--margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--muted)} .footer-name{--font-size:14px} .footer-time{--font-family:'IBM Plex Mono',monospace;font-size:11px}
+@media (max-width:720px){--.page{--padding:22px 14px 56px} .overview,.top-picks,.judgment{--padding:18px} .grid{--grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="hero">
+    <div class="eyebrow">Daily Tech Digest</div>
+    <h1 class="title">Daily Tech<br><em>Digest</em></h1>
+    <div class="date">2026-03-11 · Asia/Shanghai</div>
+  </header>
+
+  <section class="overview">
+    <div class="overview-label">今日总览</div>
+    <div class="overview-text">过去 24 小时里，科技圈的主线很清楚：AI 仍然是绝对核心，但关注点正在从「模型更强」继续转向「产品落地、Agent 工作流、工程治理、基础设施扩张和平台边界重划」；芯片与政策层也都没闲着。</div>
+  </section>
+
+  <nav class="top-picks">
+    <span class="top-picks-label">今日焦点</span>
+    <a class="top-pick-item" href="https://openai.com/index/instruction-hierarchy-challenge" target="_blank" rel="noopener">AI 模型与实验室 · OpenAI 发布「指令层级」研究挑战<\/a> <a class="top-pick-item" href="https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt" target="_blank" rel="noopener">AI 产品与平台 · ChatGPT 上线数学与科学交互式可视化学习能力<\/a> <a class="top-pick-item" href="https://the-decoder.com/claude-code-gets-parallel-ai-agents-that-review-code-for-bugs-and-security-gaps/" target="_blank" rel="noopener">AI Agent 与工作流 · Claude Code 引入并行 AI agents 做漏洞与缺陷审查<\/a> <a class="top-pick-item" href="https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/" target="_blank" rel="noopener">开发者工具与开源 · Amazon 要求高级工程师对 AI 辅助改动签字背书<\/a>
+  </nav>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">今日精选</h2>
+        <div class="section-sub">AI-first · 高价值综合科技日报</div>
+      </div>
+    </div>
+    <div class="grid">
+      <article class="card" style="--accent:#67e8f9">
+  <div class="card-cat">AI 模型与实验室</div>
+  <h3 class="card-title">OpenAI 发布「指令层级」研究挑战</h3>
+  <p class="card-reason">这不是又一篇模型宣传稿，而是正面处理 Agent 时代最关键的问题之一——当系统指令、开发者意图和用户请求冲突时，模型该如何稳定地做对事。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://openai.com/index/instruction-hierarchy-challenge" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article><article class="card" style="--accent:#a78bfa">
+  <div class="card-cat">AI 产品与平台</div>
+  <h3 class="card-title">ChatGPT 上线数学与科学交互式可视化学习能力</h3>
+  <p class="card-reason">这代表通用聊天产品开始进一步产品化为「可交互教学界面」，比单纯回答问题更接近真正可复用的 AI 学习工具。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article><article class="card" style="--accent:#a78bfa">
+  <div class="card-cat">AI 产品与平台</div>
+  <h3 class="card-title">Gemini 进一步深入 Google Workspace，Sheets 表现被重点强化</h3>
+  <p class="card-reason">Google 正把 AI 从侧边助手推进为办公套件的原生层，尤其是表格场景一旦做顺，会直接改写大量知识工作者的数据处理入口。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article><article class="card" style="--accent:#34d399">
+  <div class="card-cat">AI Agent 与工作流</div>
+  <h3 class="card-title">Claude Code 引入并行 AI agents 做漏洞与缺陷审查</h3>
+  <p class="card-reason">这说明代码 Agent 正从「单线程写代码」升级到「多代理协作审查」，工作流形态开始更像真正的软件团队，而不是一个会打字的自动补全器。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://the-decoder.com/claude-code-gets-parallel-ai-agents-that-review-code-for-bugs-and-security-gaps/" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article><article class="card" style="--accent:#f59e0b">
+  <div class="card-cat">开发者工具与开源</div>
+  <h3 class="card-title">Amazon 要求高级工程师对 AI 辅助改动签字背书</h3>
+  <p class="card-reason">一连串故障之后，大厂开始把「AI 写得快」重新拉回「谁来负责上线质量」，这比任何炫技 demo 都更能说明 AI 编程正进入治理阶段。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article><article class="card" style="--accent:#fb7185">
+  <div class="card-cat">安全、政策与治理</div>
+  <h3 class="card-title">Anthropic 就「供应链风险」认定起诉美国政府</h3>
+  <p class="card-reason">这场官司已经不是企业公关战，而是 AI 公司、政府采购、国防体系与政治审查边界的正面碰撞，后续会影响整个大模型行业的政企博弈方式。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://arstechnica.com/tech-policy/2026/03/anthropic-sues-us-over-blacklisting-white-house-calls-firm-radical-left-woke/" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article><article class="card" style="--accent:#60a5fa">
+  <div class="card-cat">云、芯片与基础设施</div>
+  <h3 class="card-title">NVIDIA 与 Thinking Machines Lab 宣布长期吉瓦级合作</h3>
+  <p class="card-reason">这不是普通合作新闻，而是再一次强化了一个现实——顶级 AI 实验室竞争的底层，越来越是算力供给、基础设施绑定和资本调度能力。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://blogs.nvidia.com/blog/nvidia-thinking-machines-lab/" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article><article class="card" style="--accent:#f472b6">
+  <div class="card-cat">商业、资本与行业格局</div>
+  <h3 class="card-title">Meta 收购 AI Agent 社交网络 Moltbook</h3>
+  <p class="card-reason">这笔收购很有风向标意义，说明平台巨头已经开始押注「Agent 原生社交与分发界面」这种新交互形态，而不只是把 Agent 塞进现有 App。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article><article class="card" style="--accent:#22d3ee">
+  <div class="card-cat">前沿科研</div>
+  <h3 class="card-title">Pokémon Go 的地图能力正在给配送机器人提供厘米级世界模型</h3>
+  <p class="card-reason">这类故事的价值不在标题花活，而在它展示了消费级 AR 地图资产如何反哺机器人感知与导航，具身智能的基础设施拼图正在悄悄补齐。</p>
+  <div class="card-footer">
+    <a class="card-link" href="https://www.technologyreview.com/2026/03/10/1134099/how-pokemon-go-is-helping-robots-deliver-pizza-on-time/" target="_blank" rel="noopener">原文链接</a>
+  </div>
+</article>
+    </div>
+  </section>
+
+  <section class="judgment">
+    <div class="judgment-label">今日判断</div>
+    <div class="judgment-text">今天最强的信号不是「又来了个新模型」，而是 AI 正快速长成一套完整产业系统：上层是办公与学习入口，中层是 Agent 工作流和工程治理，底层是算力、平台与政策边界。芯片纯新闻和传统开源大版本今天相对安静，但 AI 系统化竞争在明显加速。</div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer-name">Generated by Salty · Tech Editorial Edition</span>
+    <span class="footer-time">2026-03-11</span>
+  </footer>
+</div>
+</body>
+</html>

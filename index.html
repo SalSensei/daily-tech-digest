@@ -194,11 +194,10 @@ body::before {
 .section { padding: 40px 0 0; }
 
 .section-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .section-number {
@@ -206,15 +205,14 @@ body::before {
   font-size: 10px;
   letter-spacing: .16em;
   color: var(--accent);
+  flex-shrink: 0;
 }
-
-.section-rule { height: 1px; background: var(--rule-dark); }
 
 .section-title {
   font-family: var(--serif-en);
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: .18em;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--ink-3);
   white-space: nowrap;
